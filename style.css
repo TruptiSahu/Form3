@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Abel');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Abel', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f1f1f1;
+  color: #fff;
+}
+
+label {
+  color: #47474e;
+}
+
+input,
+input::placeholder {
+  color: #fff;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+}
+
+.card-box__title {
+  font-size: 25px;
+  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 10px;
+}
+
+
+
+.card {
+  width: 600px;
+  border-radius: 16px;
+  background: #171a1c;
+  padding: 32px;
+}
+
+.card__col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.card__col--number {
+  margin-top: 70px;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.card__col--number input {
+  width: 100%;
+  margin-top: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 30px;
+}
+
+.card__col--number input::placeholder {
+  font-size: 30px;
+}
+
+.card__row {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.card__row .card__col {
+  display: block;
+  width: 50%;
+}
+
+.card__row .card__col:nth-of-type(2) {
+  width: 10%;
+}
+
+.card__row .card__col:nth-of-type(2) input {
+  font-size: 16px;
+}
+
+
+.card__row .card__col label {
+  display: block;
+}
+
+.card__row .card__col .custom-selector {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.card__row .card__col input {
+  width: 100%;
+  display: block;
+  background: transparent;
+}
+
+/* Selector Styling */
+.custom-selector {
+  position: relative;
+}
+
+.custom-selector select,
+.custom-selector option {
+  font-size: 16px;
+  background: #171a1c;
+  outline: none;
+  border: none;
+  color: #fff;
+}
